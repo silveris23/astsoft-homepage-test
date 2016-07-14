@@ -1,0 +1,77 @@
+﻿@charset "utf-8";
+
+/*****************************
+
+res_wrap : 공통 반응형 박스
+add : inline요소
+add_block : block요소
+blind : inline, block 모두 display:none으로 처리
+ch_align : 텍스트정렬방식
+
+box_list2 : 박스나열 1라인당 2개씩
+
+*****************************/
+
+
+/*common*/
+.res_wrap{max-width:1100px;margin:0 auto;}
+.add768{display:none;}
+.add480{display:none;}
+.add_block480{display:none;}
+.add_block768{display:none;}
+.add_block1024{display:none;}
+
+.ch_align{text-align:center;}
+
+/*box_list*/
+.box_list2{}
+.box_list2>div{ float:left;width:47%;margin-right:6%;margin-bottom:25px;text-align:center;}
+.box_list2>div.last{margin-right:0;}
+
+
+
+
+@media screen and (max-width:1280px){
+	/*common*/
+	.res_wrap{width:94%;margin:0 auto;}
+}
+
+@media screen and (max-width:1024px){
+	/*common*/
+	.res_wrap{width:94%;margin:0 auto;}
+	.add1024{display:inline !important;}
+	.add_block1024{display:block !important;}
+	.blind1024{display:none !important;}
+}
+
+@media screen and (max-width:768px) {
+	/*common*/
+	.res_wrap{width:92%;margin:0 auto;}
+	.add768{display:inline !important;}
+	.add_block768{display:block !important;}
+	.blind768{display:none !important;}
+	.ch_align{text-align:justify;}
+}
+
+@media screen and (max-width:480px) {
+	/*common*/
+	.res_wrap{width:auto; margin:0 12px;}
+	.add480{display:inline !important;}
+	.add_block480{display:block !important;}
+	.blind480{display:none !important;}
+	/*box_list*/
+	.box_list2>div{float:none;width:100%;margin-right:0 !important;margin-bottom:20px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

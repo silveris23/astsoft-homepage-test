@@ -1,0 +1,279 @@
+<?require_once $_SERVER["DOCUMENT_ROOT"]."/hm_inc/site_config.php";?>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="웹 호스팅" content="오픈 준비 중입니다.">
+<meta name="웹모니터링" content="카이퍼넷 웹 모니터링은 웹 서비스 품질을실시간으로 모니터링 하는 솔루션 입니다.">
+<meta name="서버모니터링" content="카이퍼넷 서버 모니터링은 서버 자원 상태, 내/외부 네트워크 접속현황, 프로세스 현황 등을 실시간으로 모니터링 하는 솔루션 입니다. ">
+<meta name="소스 위변조" content="카이퍼넷 소스 위/변조 탐지∙복원은 주요 소스를 감시하며 위/변조 시 자동 복원하는 솔루션 입니다. ">
+<meta name="웹방화벽" content="카이퍼넷 웹 방화벽은 서버에 설치하는 소프트웨어형 웹 보안 솔루션 입니다. ">
+<meta name="IoT 보안" content="카이퍼넷 IoT 보안은 사물인터넷 홈 제품을 보안하는 솔루션 입니다. ">
+
+<title>카이퍼넷</title>
+<link rel="stylesheet" type="text/css" href="/css/default.css" />
+<script src="/js/jquery-1.8.1.min.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/jquery.cookie.js"></script>
+<script src="/js/jquery.filestyle.js"></script>
+<script src="/js/jqbookmark.js"></script>
+<script src="/js/design.js"></script>
+<script src="/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script src="/js/TweenMax.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/colorbox.css" />
+<script src="/js/jquery.colorbox.js"></script>
+
+<!--[if lt IE 9]>
+<script src="/js/html5shiv.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+
+
+
+<!--div:wrap//-->
+<div id="<?if(!$mainNum){?>main_<?}?>wrap">
+
+
+<!--header//-->
+<div id="header">
+	<div class="borB"></div>
+	<div id="header_wrap" class="res_wrap">
+	 <h1 class="logo"><a href="/index.gsp"><?=$info_sitename?></a></h1>
+      	
+		<div id="top_info">
+	      <ul class="lsm1">
+			<li><a href="http://master1.kuipernet.co.kr/" title="join" target="_blank">회원가입</a></li>
+			<li><a href="http://master1.kuipernet.co.kr/" title="login" target="_blank">로그인</a></li>
+			<!-- <li><a href="/patner.html?cate=patner" title="patner" >파트너</a></li> -->
+			<li class="nbor"><a href="/about.html?cate=about" >회사소개</a></li>
+			<li class="last"><a href="/english/" >ENGLISH</a></li>
+		 </ul>
+		</div>
+
+	 <!--gnb//-->
+    <div id="gnb">
+
+    	<ul class="menu">
+
+      	<li class="first on">
+          <a href="/product2.html?cate=product2&tab=1" <?if($mainNum==1){?>class="selected"<?}?>>제품</a>
+          <div class="submenu">
+          	<img src="/assets/about/img1.jpg" alt="">
+
+			<ul>
+				<li>
+					<a href="/product2.html?cate=product2&tab=1" <?if($menuNum==11){?>class="selected"<?}?>><h5>웹 호스팅</h5></a>
+						<ul>
+							<li><a href="/product2.html?cate=product2&tab=1">제품개요</a></li>
+							<li><a href="/product2.html?cate=product2&tab=2">서비스 구성</a></li>
+							<li><a href="/product2.html?cate=product2&tab=3">주요기능</a></li>
+							<li><a href="/product2.html?cate=product2&tab=4">서비스요금</a></li>
+						</ul>
+				</li>
+				<li>
+					<a href="/product1.html?cate=product1&tab=1" <?if($menuNum==12){?>class="selected"<?}?>><h5>웹모니터링</h5></a>
+						<ul>
+							<li><a href="/product1.html?cate=product1&tab=1">제품개요</a></li>
+							<li><a href="/product1.html?cate=product1&tab=2">서비스 구성</a></li>
+							<li><a href="/product1.html?cate=product1&tab=3">주요기능</a></li>
+							<li><a href="/product1.html?cate=product1&tab=4">서비스요금</a></li>
+						</ul>
+				</li>
+				<li>
+					<a href="/product3.html?cate=product3&tab=1" <?if($menuNum==13){?>class="selected"<?}?>><h5>서버모니터링</h5></a>
+						<ul>
+							<li><a href="/product3.html?cate=product3&tab=1">제품개요</a></li>
+							<li><a href="/product3.html?cate=product3&tab=2">서비스 구성</a></li>
+							<li><a href="/product3.html?cate=product3&tab=3">주요기능</a></li>
+							<li><a href="/product3.html?cate=product3&tab=4">서비스요금</a></li>
+						</ul>
+				</li>
+				<li>
+					<a href="/product4.html?cate=product4&tab=1" <?if($menuNum==14){?>class="selected"<?}?>><h5>소스위변조</h5></a>
+						<ul>
+							<li><a href="/product4.html?cate=product4&tab=1">제품개요</a></li>
+							<li><a href="/product4.html?cate=product4&tab=2">서비스 구성</a></li>
+							<li><a href="/product4.html?cate=product4&tab=3">주요기능</a></li>
+							<li><a href="/product4.html?cate=product4&tab=4">서비스요금</a></li>
+						</ul>
+				</li>
+				<li>
+					<a href="/product5.html?cate=product5&tab=1" <?if($menuNum==15){?>class="selected"<?}?>><h5>웹방화벽</h5></a>
+						<ul>
+							<li><a href="/product5.html?cate=product5&tab=1">제품개요</a></li>
+							<li><a href="/product5.html?cate=product5&tab=2">서비스 구성</a></li>
+							<li><a href="/product5.html?cate=product5&tab=3">주요기능</a></li>
+							<li><a href="/product5.html?cate=product5&tab=4">서비스요금</a></li>
+						</ul>
+				</li>
+				<li class="last">
+					<a href="/product6.html?cate=product6&tab=1" <?if($menuNum==16){?>class="selected"<?}?>><h5>IOT 보안</h5></a>
+						<ul>
+							<li><a href="/product6.html?cate=product6&tab=1">제품개요</a></li>
+							<li><a href="/product6.html?cate=product6&tab=2">서비스 구성</a></li>
+							<li><a href="/product6.html?cate=product6&tab=3">주요기능</a></li>
+							<!-- <li><a href="/webMonitoring.gsp?cate=product1&tab=4">서비스요금</a></li> -->
+						</ul>
+				</li>
+			</ul>
+          </div>
+        </li>
+
+        <li>
+        	<a href="/sale.html?cate=sale" <?if($mainNum==2){?>class="selected"<?}?>>제품구매</a>
+        </li>
+
+        <li>
+        	<a href="/down.html?cate=down&tab=1" <?if($mainNum==3){?>class="selected"<?}?>>다운로드 </a>
+        </li>
+        <li>
+        	<a href="/board.html?cate=notice" <?if($mainNum==4){?>class="selected"<?}?>>고객지원</a>
+        </li>
+        <li>
+        	<a href="/patner.html?cate=patner" <?if($mainNum==5){?>class="selected"<?}?>>파트너</a>
+        </li>
+      </ul>
+
+
+      </div>
+		<!--//gnb-->
+
+	</div>
+
+
+
+</div>
+<!--//header-->
+
+<!--//mobile_header-->
+<div id="mobile_header">
+	<div class="posr">
+		<h1 class="logo"><a href="/index.gsp"><?=$info_sitename?></a></h1>
+		<a href="#" class="open_m_menu"><img src="/assets/btn_m_menu.gif" alt="모바일메뉴열기" /></a>
+
+		<div class="mobile_menu shedow2">
+
+			<div class="top_link">
+				<a href="/index.gsp" class="home">HOME</a>
+				<a href="#" class="close_m_menu">메뉴닫기</a>
+			</div>
+			<div class="language">
+				<ul>
+					<li><a href="/english/index.html">ENGLISH</a></li>
+				</ul>
+			</div>
+			<ul>
+
+
+	      	<li class="first">
+          <a href="" <?if($mainNum==1){?>class="selected"<?}?>>제품</a>
+          <div class="submenu">
+		 <ul>
+			<li><a href="/product2.html?cate=product2&tab=1" <?if($menuNum==12){?>class="selected"<?}?>>웹호스팅</a></li>
+			<li><a href="/product1.html?cate=product1&tab=1" <?if($menuNum==11){?>class="selected"<?}?>>웹모니터링</a></li>
+			<li><a href="/product3.html?cate=product3&tab=1" <?if($menuNum==13){?>class="selected"<?}?>>서버모니터링</a></li>
+			<li><a href="/product4.html?cate=product4&tab=1" <?if($menuNum==14){?>class="selected"<?}?>>소스 위변조</a></li>
+			<li><a href="/product5.html?cate=product5&tab=1" <?if($menuNum==15){?>class="selected"<?}?>>웹방화벽</a></li>
+			<li><a href="/product6.html?cate=product6&tab=1" <?if($menuNum==16){?>class="selected"<?}?>>IoT 보안</a></li>
+		 </ul>
+          </div>
+        </li>
+        <li>
+        	<a href="/sale.html?cate=sale" <?if($mainNum==2){?>class="selected"<?}?>>제품구매</a>
+			<div class="submenu">
+				<ul>
+          			<li class="last"><a href="/sale.html?cate=sale" <?if($menuNum==21){?>class="selected"<?}?>>제품구매</a></li>
+				</ul>
+		  </div>
+        </li>
+
+        <li>
+        	<a href="/down.html?cate=down&tab=1" <?if($mainNum==3){?>class="selected"<?}?>>다운로드 </a>
+         <div class="submenu">
+				 <ul>
+          			<li class="last"><a href="/down.html?cate=down&tab=1" <?if($menuNum==31){?>class="selected"<?}?>>다운로드</a></li>
+				 </ul>
+         </div>
+        </li>
+        <li>
+        	<a href="/board.html?cate=notice" <?if($mainNum==4){?>class="selected"<?}?>>고객지원</a>
+         <div class="submenu">
+				 <ul>
+          			<li class="last"><a href="/board.html?cate=notice" <?if($menuNum==41){?>class="selected"<?}?>>고객지원</a></li>
+				 </ul>
+         </div>
+        </li>
+        <li>
+        	<a href="/patner.html?cate=patner" <?if($mainNum==5){?>class="selected"<?}?>>파트너</a>
+         <div class="submenu">
+				 <ul>
+          			<li class="last"><a href="/patner.html?cate=patner" <?if($menuNum==51){?>class="selected"<?}?>>파트너</a></li>
+				 </ul>
+         </div>
+        </li>
+
+
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+<!--//mobile_header-->
+
+
+<div id="top_gap"></div>
+
+
+<?if($cate){//메인은 미출력?>
+<!--container//-->
+<div id="visual" style="background:url(/assets/sub_visual<?=$imgNum[0]?>.jpg) no-repeat 80% 0;" class="res_wrap">
+      <div id="page_title">
+			<h3><?=$tDepth2?></h3>
+			<p><?=$titleSub?></p>
+      </div>
+
+</div>
+
+<div id="container"  class="res_wrap">
+
+	<!--lnb//-->
+	
+    <div class="pos_cur"><img src="/assets/icon_home.png" /> <?=$tDepth1?> > <span class="current"><?=$tDepth2?></span></div>
+
+	<!--//lnb-->
+
+	<!--content_wrap//-->
+	<div id="content_wrap">
+	<?include "inc_quick.html";?>
+    <!--content//-->
+	<div id="content">
+      <!--타이틀-->
+	<?include "inc_lnb.html";?>
+
+
+
+
+
+
+
+    	<!--page_wrap//-->
+    	<div id="page_wrap<?=$isBoard?>">
+
+			<?if($isBoard){?>
+			<div class="pdT20"></div>
+			<div class="pdT10 blind768"></div>
+			<div class="pdT10 blind480"></div>
+				<p class="bd_exp"><?=$tIntro?></p>
+			<?}?>
+
+
+<?}?>
+
+
